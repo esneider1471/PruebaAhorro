@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>AHORRO NATILLERO</h1>
+<div class="fondo">
+   
+     <div class="jumbotron">
+        <label class="col-sm-2 col-form-label">Nombre del barrio</label>
+        <input type="text"  id="lblNomBarrio"  value=""  placeholder="Nombre Barrio" class="form-control"  />
+        <label class="col-sm-2 col-form-label">Ciudad</label>
+         <input type="text"  id="txtCiudad"  value=""  placeholder="Ciudad" class="form-control" />
+        <input type="button" value="Crear" id="btnBarrio" class="btn btn-primary mb-2 " />
+    </div>
+   
+    
+
+    <div class="jumbotron">
+        <div class="form-group row">
+             <label class="col-sm-2 col-form-label" >Nombre Socio</label>
+             <input type="text"  id="txtNomsocio"   placeholder="Introducir nombre" class="form-control" />
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Cedula</label>
+            <input type="text" id="txtCedula"  placeholder="Introducir Cedula " class="form-control" />
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Barrio</label>
+            <select id="CbxBarrio" class="col-sm-2 col-form-label"></select>
+        </div>
+         <div class="form-group row">
+             <label class="col-sm-2 col-form-label">Direccion</label>
+            <input type="text" id="txtDireccion"  placeholder="Introducir direccion" class="form-control" />
+         </div>
+        <div class="form-group row">
+             <label class="col-sm-2 col-form-label">Valor Ahorro</label>
+             <input type="text" id="txtValAhorro"  placeholder="Introducir valor" class="form-control" />
+        </div>
+         
+        <input type="button" value="crear" id="btnSocio" class="btn btn-primary" />
+    </div>
+
+    <table id="tblSocios" class="table table-responsive">
+        <tr>
+            <td>IdSocio</td>
+            <td>Nombre</td>
+            <td>Cedula</td>
+            <td>Barrio</td>
+            <td>ValorAhorro</td>
+            <td>Direccion</td>
+            <td>Opciones</td>
+        </tr>
+    </table>
+
+</div>
+
+    
+
+
+<script src="../../Scripts/Ahorro/Ahorro.js"></script>
+
+
